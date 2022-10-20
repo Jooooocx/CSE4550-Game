@@ -4,6 +4,9 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Audio;
+using System.Threading;
+
 public class OptionsMenu : MonoBehaviour
 {
     public Toggle fullscreenTog, vsyncTog;
@@ -13,19 +16,66 @@ public class OptionsMenu : MonoBehaviour
 
     public TMP_Text resolutionLabel;
 
+    public AudioMixer theMixer;
+
+    public TMP_Text mastLabel; //, musicLabel, sfxLabel; // (for when digits are needed)
+
+    public Slider mastSlider; //, musicSlider, sfxSlider // for when music and sfx is added
+
     // Start is called before the first frame update
     void Start()
     {
+        // full screen, vsync, and mastVol
+
         fullscreenTog.isOn = Screen.fullScreen;
 
-        if(QualitySettings.vSyncCount == 0)
+        if (QualitySettings.vSyncCount == 0)
         {
             vsyncTog.isOn = false;
-        }else
+        } else
         {
             vsyncTog.isOn = true;
         }
+
+        bool foundRes = false;
+
+        for (int i = 0; i < resolutions.Count; i++)
+        {
+            if (Screen.width == resolutions[i].horizontal && Screen.height == resolutions[i].vertical)
+            {
+                foundRes = true;
+                selectedResolution = i;
+                UpdateResLabel();
+            }
+        }
+
+        if(!foundRes)
+        {
+            ResItem newRes = new ResItem();
+            newRes.horizontal = Screen.width;
+            newRes.vertical = Screen.height;
+
+            resolutions.Add(newRes);
+            selectedResolution = resolutions.Count - 1;
+
+            UpdateResLabel();
+        }
+
+        // audio
+
+        float vol = 0f;
+
+        theMixer.GetFloat("MasterVol", out vol);
+
+        mastSlider.value = vol;
+
+        mastLabel.text = Mathf.RoundToInt(mastSlider.value + 80).ToString();
+
+
     }
+
+            
+
 
     // Update is called once per frame
     void Update()
@@ -72,6 +122,17 @@ public class OptionsMenu : MonoBehaviour
             QualitySettings.vSyncCount = 0;
         }
     }
+
+    public void SetMasterVol()
+    {
+        mastLabel.text = Mathf.RoundToInt(mastSlider.value + 80).ToString();
+
+        theMixer.SetFloat("MasterVol", mastSlider.value);
+
+        PlayerPrefs.SetFloat("MasterVol", mastSlider.value);
+    }
+
+    
 }
 
 [System.Serializable]
