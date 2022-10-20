@@ -24,6 +24,7 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         //SceneManager.LoadScene(firstLevel()); uncomment when firstLevel is done
+        Debug.Log("Starting");
     }
 
     public void OpenOptions()
