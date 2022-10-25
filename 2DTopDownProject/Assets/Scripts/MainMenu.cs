@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    //public string firstLevel(); uncomment when firstLevel is done\
+    
 
     public GameObject optionsScreen;
 
@@ -23,7 +23,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        //SceneManager.LoadScene(firstLevel()); uncomment when firstLevel is done
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         Debug.Log("Starting");
     }
 
