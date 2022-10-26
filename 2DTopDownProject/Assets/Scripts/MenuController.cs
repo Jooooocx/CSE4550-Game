@@ -23,12 +23,7 @@ public class MenuController : MonoBehaviour
         {
             if(isPaused)
             {
-                //set pause to fales if already on
-                isPaused = false;  
-                pauseMenu.SetActive(false);
-                //start time
-                Time.timeScale = 1.0f;  
-
+                ResumeGame();
             }
             else
             {

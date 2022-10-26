@@ -112,7 +112,6 @@ public class OptionsMenu : MonoBehaviour
 
     public void ApplyChanges()
     {
-        Screen.fullScreen = fullscreenTog.isOn;
         
         if(vsyncTog.isOn)
         {
@@ -121,6 +120,9 @@ public class OptionsMenu : MonoBehaviour
         {
             QualitySettings.vSyncCount = 0;
         }
+
+        //set selected resolution
+        Screen.SetResolution(resolutions[selectedResolution].horizontal, resolutions[selectedResolution].vertical, fullscreenTog.isOn);
     }
 
     public void SetMasterVol()

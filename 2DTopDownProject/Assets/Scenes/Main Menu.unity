@@ -1979,14 +1979,14 @@ PrefabInstance:
     - target: {fileID: 4667123856154386208, guid: 617afcf7c68f97e4d9e6ce5f85377e1a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 921893652}
+      objectReference: {fileID: 317059961}
     - target: {fileID: 4667123856154386208, guid: 617afcf7c68f97e4d9e6ce5f85377e1a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseOptions
+      value: ApplyChanges
       objectReference: {fileID: 0}
     - target: {fileID: 4667123856154386208, guid: 617afcf7c68f97e4d9e6ce5f85377e1a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MainMenu, Assembly-CSharp
+      value: OptionsMenu, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4667123856154386208, guid: 617afcf7c68f97e4d9e6ce5f85377e1a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -4341,6 +4341,10 @@ PrefabInstance:
     - target: {fileID: 2237795298759237872, guid: d4e2f5cd0457aad438c54d4b93751ef1, type: 3}
       propertyPath: m_Name
       value: Options Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237795298759237872, guid: d4e2f5cd0457aad438c54d4b93751ef1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2237795298759237873, guid: d4e2f5cd0457aad438c54d4b93751ef1, type: 3}
       propertyPath: m_Pivot.x
