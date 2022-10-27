@@ -14,24 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slots:
   - item: {fileID: 11400000, guid: 8eea4828c2431084db529d169613aea1, type: 2}
-    count: 1
+    count: 3
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0
   - item: {fileID: 11400000, guid: 8eea4828c2431084db529d169613aea1, type: 2}
-    count: 100
-  - item: {fileID: 11400000, guid: 8eea4828c2431084db529d169613aea1, type: 2}
-    count: 30
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
     count: 0
   - item: {fileID: 0}
     count: 0

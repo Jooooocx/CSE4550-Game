@@ -26,9 +26,9 @@ public class InventoryButton : MonoBehaviour
             text.gameObject.SetActive(true);
             text.text = slot.count.ToString();
         }
-        else{
+        else
+        {
             text.gameObject.SetActive(false);
-
         }
     }
 
