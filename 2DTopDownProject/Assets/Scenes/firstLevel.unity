@@ -10388,6 +10388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 147253523}
+  inventoryContainer: {fileID: 11400000, guid: 44e5c1af42882c64ab77546e7c7c4e40, type: 2}
 --- !u!4 &1335496310
 Transform:
   m_ObjectHideFlags: 0
