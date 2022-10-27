@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 4261
+  controlID: 5636
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 4262
+  controlID: 5637
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -204,7 +204,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8cdcfffff8dcffff58ddffffb8ddffffd0ddffffe8ddffff48deffff78deffffd8deffff20dfffff50dfffff68dfffff6adfffff9ae2ffffc0e9ffffd8efffffc0f0ffff0af1ffffd6f5ffffacf6ffffe4faffff5892000066b80000
+      m_ExpandedIDs: c0b9ffff7ebdffff7ac8ffff8cdcfffff8dcffff58ddffffb8ddffffd0ddffffe8ddffff48deffff78deffffd8deffff20dfffff50dfffff68dfffff6adfffff9ae2ffffc0e9ffffd8efffffc0f0ffff0af1ffffd6f5ffffacf6ffffe4faffff5892000066b8000020cf0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -297,21 +297,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\Nylan Dones\OneDrive\Desktop\Unity Files\CSE4550-Game\2DTopDownProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7e650000
-    m_LastClickedID: 25982
+    m_SelectedIDs: 7c650000
+    m_LastClickedID: 25980
     m_ExpandedIDs: 000000003a6500003c6500003e65000040650000426500004465000046650000486500004a65000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -367,8 +367,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000628f0000386300004e6500000c720000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000628f0000386300004e6500000c72000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -392,7 +392,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 429}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 96
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 151
@@ -624,7 +624,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 4194
+  controlID: 5614
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
