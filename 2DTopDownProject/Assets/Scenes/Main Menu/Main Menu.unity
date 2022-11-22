@@ -1364,7 +1364,7 @@ VideoPlayer:
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
@@ -4643,7 +4643,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1407536175489353454, guid: 92d835fd50f25f94898ef11f43afae74, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -2.6999512
+      value: -2.7000732
       objectReference: {fileID: 0}
     - target: {fileID: 1407536175489353455, guid: 92d835fd50f25f94898ef11f43afae74, type: 3}
       propertyPath: m_text
@@ -4755,7 +4755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1407536176253053601, guid: 92d835fd50f25f94898ef11f43afae74, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -34.042908
+      value: -34.04297
       objectReference: {fileID: 0}
     - target: {fileID: 1407536176253053601, guid: 92d835fd50f25f94898ef11f43afae74, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
