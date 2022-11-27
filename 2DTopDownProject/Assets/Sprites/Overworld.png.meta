@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -23204,16 +23204,16 @@ TextureImporter:
       Overworld_817: 621955947
       Overworld_1036: -2133013907
       Overworld_502: 508164776
-      Overworld_446: 892162564
-      Overworld_866: 32927680
-      Overworld_1052: -895310692
       Overworld_303: -248225792
+      Overworld_446: 892162564
+      Overworld_1052: -895310692
+      Overworld_452: -1317833433
       Overworld_317: -1006064573
       Overworld_396: -1316817677
+      Overworld_866: 32927680
       Overworld_569: -1658030463
       Overworld_647: 1131859198
       Overworld_421: -92036333
-      Overworld_452: -1317833433
       Overworld_940: 601293062
       Overworld_863: 1692484021
       Overworld_587: -184511175
