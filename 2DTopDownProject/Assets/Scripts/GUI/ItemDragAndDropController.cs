@@ -9,22 +9,23 @@ public class ItemDragAndDropController: MonoBehaviour
 {
     [SerializeField] ItemSlot itemSlot;
     [SerializeField] GameObject itemIcon;
+    [SerializeField] ItemToolbarPanel toolBar;
     RectTransform iconTransform;
     Image itemIconImage;
 
-    internal void OnClick(ItemSlot itemSlot)
+    internal void OnClick(ItemSlot itemSelected)
     {
         if(this.itemSlot.item == null)
         {
-            this.itemSlot.Copy(itemSlot);
-            itemSlot.Clear();
+            this.itemSlot.Copy(itemSelected);
+            itemSelected.Clear();
         }
         else
         {
-            Item item = itemSlot.item;
-            int count = itemSlot.count;
+            Item item = itemSelected.item;
+            int count = itemSelected.count;
 
-            itemSlot.Copy(this.itemSlot);
+            itemSelected.Copy(this.itemSlot);
             this.itemSlot.Set(item, count);
         }
         UpdateIcon();
@@ -76,5 +77,6 @@ public class ItemDragAndDropController: MonoBehaviour
             itemIcon.SetActive(true);
             itemIconImage.sprite = itemSlot.item.icon;
         }
+        toolBar.Show();
     }
 }

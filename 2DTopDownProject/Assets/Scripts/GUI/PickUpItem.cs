@@ -8,6 +8,7 @@ public class PickUpItem : MonoBehaviour
     [SerializeField] float speed = 5f;
     [SerializeField] float pickUpDistance = 1.5f;
     [SerializeField] float timeUntilLost = 10f;
+    // [SerializeField] InventoryController inventoryController;
 
     public Item item;
     public int count = 1;
@@ -47,6 +48,7 @@ public class PickUpItem : MonoBehaviour
             if(GameManager.instance.inventoryContainer != null)
             {
                 GameManager.instance.inventoryContainer.Add(item, count);
+                // inventoryController.PanelShow();
             }
             else
             {

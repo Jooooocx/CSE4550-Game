@@ -36,6 +36,20 @@ public class ItemSlot
 [CreateAssetMenu(menuName ="Data/Item Container")]
 public class ItemContainer : ScriptableObject
 {
+    public ItemContainer Instance;
+    private void Awake() 
+    { 
+        // If there is an instance, and it's not me, delete myself.
+        
+        if (Instance != null && Instance != this) 
+        { 
+            Destroy(this); 
+        } 
+        else 
+        { 
+            Instance = this; 
+        } 
+    }
     public List<ItemSlot> slots;
 
     public void Add(Item item, int count = 1)
