@@ -26,6 +26,11 @@ public class ItemToolbarPanel : ItemPanel
         Highlight(0);
     }
 
+    private void Update()
+    {
+        Show();
+    }
+
 
 
 }
