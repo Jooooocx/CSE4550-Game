@@ -12387,7 +12387,6 @@ MonoBehaviour:
     item: {fileID: 0}
     count: 0
   itemIcon: {fileID: 1660816223}
-  toolBar: {fileID: 178835461}
 --- !u!114 &1335496312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12731,7 +12730,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 9025678b593cfb04ba76eab419093e11, type: 2}
   m_audioClip: {fileID: 8300000, guid: ed7bbf8916c5bad4eaebf07c91891b56, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
