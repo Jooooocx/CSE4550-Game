@@ -9,6 +9,7 @@ public class ItemDragAndDropController: MonoBehaviour
 {
     [SerializeField] ItemSlot itemSlot;
     [SerializeField] GameObject itemIcon;
+    [SerializeField] ItemToolbarPanel toolBar;
     RectTransform iconTransform;
     Image itemIconImage;
 
@@ -61,6 +62,8 @@ public class ItemDragAndDropController: MonoBehaviour
                 }
             }
         }
+
+
     }
     
     private void UpdateIcon()
@@ -74,5 +77,6 @@ public class ItemDragAndDropController: MonoBehaviour
             itemIcon.SetActive(true);
             itemIconImage.sprite = itemSlot.item.icon;
         }
+        toolBar.Show();
     }
 }
