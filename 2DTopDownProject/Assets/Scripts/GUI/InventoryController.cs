@@ -6,8 +6,6 @@ public class InventoryController : MonoBehaviour
 {
     [SerializeField] GameObject panel;
     [SerializeField] GameObject toolbarPanel;
-    // [SerializeField] ItemPanel panelScript;
-    // [SerializeField] ItemPanel toolbarPanelScript;
 
     private void Update()
     {
@@ -17,11 +15,5 @@ public class InventoryController : MonoBehaviour
             // toolbarPanel.SetActive(!toolbarPanel.activeInHierarchy);
         }
     }
-    // public void PanelShow()
-    // {
-        
-    //     // ItemPanel panelScript = panel.GetComponent(typeof(ItemPanel));
-    //     panelScript.Show();
-    //     toolbarPanelScript.Show();
-    // }
+
 }
