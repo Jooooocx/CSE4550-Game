@@ -48,7 +48,6 @@ public class PickUpItem : MonoBehaviour
             if(GameManager.instance.inventoryContainer != null)
             {
                 GameManager.instance.inventoryContainer.Add(item, count);
-                // inventoryController.PanelShow();
             }
             else
             {
